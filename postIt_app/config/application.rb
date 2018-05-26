@@ -10,7 +10,7 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
-# require "sprockets/railtie"
+require "sprockets/railtie" #had to uncomment to run:https://github.com/fgrehm/letter_opener_web/issues/46
 require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
