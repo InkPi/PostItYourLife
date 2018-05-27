@@ -5,6 +5,7 @@ var PostItsContainer = createReactClass({
 
   render: function(props) {
     return (
+      <div>
       <table>
         {props.posts.map(item => (
         <React.Fragment key={post.id}>
@@ -15,6 +16,7 @@ var PostItsContainer = createReactClass({
         </React.Fragment>
         ))}
       </table>
+      </div>
     );
 };
 })
