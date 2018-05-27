@@ -22,8 +22,15 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
-  database: postIt_app_development
+  #for postgres, added adapter, encoding, pool for
+  #dev and test (https://www.webascender.com/blog/rails-react-forms-validations-real-time-updates/)
+  adapter: postgresql
+  encoding: unicode
+  # <<: *default
+  database: postIt_app_development #don't erase
+  pool: 5
+  min_messages: WARNING
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -56,8 +63,11 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  # <<: *default
   database: postIt_app_test
+  pool: 5
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
