@@ -5,41 +5,36 @@ import Post from './Post.jsx';
 import PostForm from './PostForm.jsx'
 
 function ShowAll(props) {
-  const space = props.posts.map(posts => {
-    console.log('props',posts);
-    return (
-      <div className='postDiv' key={posts.id}>
-          <h1>Title: {posts.title}</h1>
-          <h2>Content: {posts.content}</h2>
-          <Switch>
-          <Route
-            path={`/post_its/${posts.id}/edit`}
-            render={()=> (
-                <Post
-                  onSubmit={updatedPost => props.onEdit(updatedPost.id)}
-                  initialValue={posts}
-                />
-            )}
-          />
+  //taught how javascript syntac must be outside of html tags
+  const space = props.posts.map(post => (
+      <div className='postDiv'>
+      <Switch key={post.id}>
           <Route
             render={() => (
               <Post
-                onDelete={()=> props.onDelete(posts.id)}
-                post={posts}
+                onEdit={()=> props.onEdit(post.id)}
+                onDelete={()=> props.onDelete(post.id)}
+                post={post}
               />
             )}
           />
           </Switch>
         </div>
-      )
-  });
-  //give "loading" while not being rendered
+
+    ));
+
+
   let response;
   if (!space) {
     console.log('space', space);
-  response = <h1>Loading</h1>
+    response = <h1>Loading</h1>
 
   }
+
+
+
+  //give "loading" while not being rendered
+
   // else {
   //   console.log('space', space.title);
   //       response = (

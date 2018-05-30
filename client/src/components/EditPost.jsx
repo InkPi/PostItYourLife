@@ -17,7 +17,7 @@ class EditPost extends Component ({ post, onDelete, onEditClick}) {
     <h4>{post.title}</h4>
       <p>{post.content}<button onClick={onDelete}>X</button></p>
       <p onClick={onEditClick}>Edit</p>
-      </form>
+    </form>
     </div>
   )
 }

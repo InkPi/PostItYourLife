@@ -6,7 +6,7 @@ function Post({ post, onDelete, onEdit}) {
   return (
     <div>
     <form>
-    <h4>{post.title}</h4>
+    <h1>{post.title}</h1>
       <p>{post.content}<button onClick={onDelete}>X</button></p>
       <p onClick={onEdit}>Edit</p>
       </form>

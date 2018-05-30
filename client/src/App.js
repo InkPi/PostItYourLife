@@ -58,7 +58,7 @@ class App extends Component {
   }
 
   handleDelete(id) {
-    console.log('id', id)
+    console.log('id', id);
     deletePost(id)
     .then(resBody=> {
       this.setState((prevState, props) => {
@@ -74,13 +74,13 @@ class App extends Component {
     updatePost(post, id)
     .then(resBody => {
       this.setState((prevState, props) => {
-        const { posts } = prevState;
-        const indx = posts.findIndex(p => p.id === id);
+        //const { posts } = prevState;
+        const indx = prevState.findIndex(p => p.id === id);
         return {
           posts: [
-            ...posts.slice(0, indx),
+            ...prevState.slice(0, indx),
             resBody.data,
-            ...posts.slice(indx+1)
+            ...prevState.slice(indx+1)
           ]
         }
       })

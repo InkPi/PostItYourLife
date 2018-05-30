@@ -5,7 +5,7 @@ const BASE_URL= process.env.REACT_APP_BASE_URL;
 //check for errors
 function checkStatus(resp) {
   if (!resp.ok) throw new Error(resp.statusMessage);
-  console.log('Hello' + resp);
+  console.log('errors');
   return resp.json();
 }
 
@@ -43,13 +43,16 @@ function deletePost(id) {
 }
 
 function updatePost(post, id) {
+  const foo=() => {
+    console.log('updated');
+  }
   return fetch(`${BASE_URL}/post_its/${id}`, {
     method: 'PUT',
     body: JSON.stringify(post),
     headers: {
       'content-type': 'application/json'
     }
-  }).then(checkStatus)
+  }).then(wantchocolate => foo())
 }
 
 //Auth
