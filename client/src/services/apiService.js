@@ -1,8 +1,11 @@
 import jwtDecode from 'jwt-decode';
 
+const BASE_URL= process.env.REACT_APP_BASE_URL;
+
 //check for errors
 function checkStatus(resp) {
   if (!resp.ok) throw new Error(resp.statusMessage);
+  console.log('Hello' + resp);
   return resp.json();
 }
 
@@ -15,11 +18,13 @@ function saveToken(respBody) {
 
 //Post
 function getPosts() {
-  return fetch('/api/posts').then(checkStatus);
+  const req = fetch(`${BASE_URL}/post_its`).then(checkStatus);
+  console.log('fetch', req)
+  return req;
 }
 
 function createPost(post) {
-  return fetch('/api/posts', {
+  return fetch(`${BASE_URL}/post_its`, {
     method: 'Post',
     body: JSON.stringify(post),
     headers: {
@@ -29,13 +34,16 @@ function createPost(post) {
 }
 
 function deletePost(id) {
-  return fetch(`/api/posts/${id}`, {
+  const foo=() => {
+    console.log('deleted');
+  }
+  return fetch(`${BASE_URL}/post_its/${id}`, {
     method: 'DELETE',
-  }).then(checkStatus)
+  }).then(wantchocolate => foo())
 }
 
 function updatePost(post, id) {
-  return fetch(`/api/quotes/${id}`, {
+  return fetch(`${BASE_URL}/post_its/${id}`, {
     method: 'PUT',
     body: JSON.stringify(post),
     headers: {
@@ -47,7 +55,7 @@ function updatePost(post, id) {
 //Auth
 
 function login(creds) {
-  return fetch('/api/auth/register', {
+  return fetch(`${BASE_URL}/api/auth/register`, {
     method: 'POST',
     body: JSON.stringify(creds),
     headers: {
@@ -57,7 +65,7 @@ function login(creds) {
 }
 
 function register(creds) {
-  return fetch('/api/auth/register', {
+  return fetch(`${BASE_URL}/api/auth/register`, {
   method: 'POST',
   body: JSON.stringify(creds),
   headers: {

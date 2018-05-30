@@ -5,7 +5,9 @@ function Landing (props) {
 
   return (
     <div>
-
+      <ul>
+       <li><Link to='/post_its'>Show All Post</Link></li>
+      </ul>
     </div>
   )
 }

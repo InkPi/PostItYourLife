@@ -31,13 +31,10 @@ class App extends Component {
 
   componentDidMount() {
     getPosts() //maybe heroku here //3000 become same look as 3001
-      .then(resp =>
-        {
-          console.log(resp);
-            return resp.json()})
-      .then(data => this.setState({
-        postit: data.postit
-      })).catch((err)=> err.message);
+      .then(data => {console.log('data',data);
+        this.setState({
+        posts: data //already out in array
+      })}).catch((err)=> err.message);
   }
 
   // componentDidMount(){
@@ -61,6 +58,7 @@ class App extends Component {
   }
 
   handleDelete(id) {
+    console.log('id', id)
     deletePost(id)
     .then(resBody=> {
       this.setState((prevState, props) => {
@@ -72,6 +70,7 @@ class App extends Component {
   }
 
   handleEdit(post, id) {
+    console.log('Edit');
     updatePost(post, id)
     .then(resBody => {
       this.setState((prevState, props) => {

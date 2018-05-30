@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Post.css';
 
-function Post({ post, onDelete, onEditClick}) {
+function Post({ post, onDelete, onEdit}) {
   return (
-    <li>
+    <div>
+    <form>
     <h4>{post.title}</h4>
       <p>{post.content}<button onClick={onDelete}>X</button></p>
-      <Link to={'/posts/${post.id}/edit'}>Edit</Link>
-    }
-    </li>
+      <p onClick={onEdit}>Edit</p>
+      </form>
+    </div>
   )
 }
 
