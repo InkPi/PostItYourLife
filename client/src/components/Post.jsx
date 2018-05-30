@@ -8,7 +8,7 @@ function Post({ post, onDelete, onEdit}) {
     <form>
     <h1>{post.title}</h1>
       <p>{post.content}<button onClick={onDelete}>X</button></p>
-      <p onClick={onEdit}>Edit</p>
+      <Link to={`posts/${post.id}/edit`}>Edit</Link>
       </form>
     </div>
   )

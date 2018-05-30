@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Post from './Post.jsx';
@@ -8,11 +8,24 @@ function ShowAll(props) {
   //taught how javascript syntac must be outside of html tags
   const space = props.posts.map(post => (
       <div className='postDiv'>
+
       <Switch key={post.id}>
+
           <Route
+            path={`posts/${post.id}/edit`}
+            render={() => (
+              <li>
+                <PostForm
+                  onSubmit={updatedPost => props.onEdit(updatedPost, updatedPost.id)}
+                  initialValue={post}
+                />
+              </li>
+            )}
+            />
+          <Route
+            path={`/posts/`}
             render={() => (
               <Post
-                onEdit={()=> props.onEdit(post.id)}
                 onDelete={()=> props.onDelete(post.id)}
                 post={post}
               />
@@ -30,8 +43,6 @@ function ShowAll(props) {
     response = <h1>Loading</h1>
 
   }
-
-
 
   //give "loading" while not being rendered
 

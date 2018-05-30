@@ -47,7 +47,7 @@ render() {
         <input
           type='text'
           name='title'
-          value={this.state.post.title} //put this.state for state change
+          value={title} //this.state.post.title/put this.state for state change
           onChange={this.handleInputChange}
         />
       </label>
@@ -55,7 +55,7 @@ render() {
       <h4>Content</h4>
       <textarea
         name='content'
-        value={this.state.post.content}
+        value={content} //this.state.post.content
         onChange={this.handleInputChange}
       />
       </label>

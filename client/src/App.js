@@ -71,19 +71,26 @@ class App extends Component {
 
   handleEdit(post, id) {
     console.log('Edit');
+    console.log("this is id:", id);
     updatePost(post, id)
     .then(resBody => {
-      this.setState((prevState, props) => {
-        //const { posts } = prevState;
-        const indx = prevState.findIndex(p => p.id === id);
-        return {
-          posts: [
-            ...prevState.slice(0, indx),
-            resBody.data,
-            ...prevState.slice(indx+1)
-          ]
-        }
-      })
+      console.log(resBody);
+      // this.setState((prevState, props) => {
+      //   //const { posts } = prevState;
+      //   const indx = prevState.posts.findIndex(p => {
+
+      //     console.log("this is p:", p.id == id);
+      //     return p.id == id
+      //   });
+      //   console.log("this is index:", indx);
+      //   return {
+      //     posts: [
+      //       ...prevState.slice(0, indx),
+      //       resBody.data,
+      //       ...prevState.slice(indx+1)
+      //     ]
+      //   }
+      // })
     });
   }
 
