@@ -11,8 +11,10 @@ class PostForm extends Component {
       post: Object.assign({
         title: '',
         content: '',
-      }, props.initialValue)
+      }, this.props.initialValue)
     };
+    //yay remembered to someone taught me, need this. for class
+    //been told initialValue connects to ShowAll, I wasn't sure if it was predefined or defined
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -37,7 +39,7 @@ class PostForm extends Component {
   }
 
 
-
+//form with action of edit or action based on whether there's id
 render() {
   const { title, content, id } = this.state.post
   return (

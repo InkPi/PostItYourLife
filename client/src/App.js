@@ -29,6 +29,7 @@ class App extends Component {
     this.handleLogin = this.handleLogin.bind(this);
   }
 
+  //set data of arrays onto screen
   componentDidMount() {
     getPosts() //coming out
       .then(data => {console.log('data',data);
@@ -40,18 +41,19 @@ class App extends Component {
 
   }
 
-
+  //delete action
   handleSubmit(post) {
     createPost(post)
     .then(resBody => {
       this.setState((prevState, props) => {
         return {
           posts: prevState.posts.concat(resBody.data)
-        }
+        } //didn't know about concat but it is useful: help merge new and old arrays
       })
     });
   }
 
+  //delete action
   handleDelete(id) {
     console.log('id', id);
     deletePost(id)
@@ -64,37 +66,33 @@ class App extends Component {
     });
   }
 
+  //edit action
   handleEdit(post, id) {
     console.log("this is id:", id);
     updatePost(post, id) //got help: did not realize this had to be exact params in another file
     .then(resBody => {
-      console.log("this is resBody:", resBody);
-
       this.setState((prevState, props) => {
         const { posts } = prevState; //destructoring method (got help, didn't know why I thought it was a param)
         console.log('this is prevState:', prevState);
         const indx = posts.findIndex(q => q.id === id);
-        console.log("this is index:", indx);
         return {
           posts: [
             ...posts.slice(0, indx),
             resBody.data,
             ...posts.slice(indx+1)
           ]
-        }
+        } //not used to .slice and looked back on previous labs
       })
     });
   }
 
+  //lab
   handleLogin(creds) {
     login(creds)
       .then(user => this.setState({currentUser: user}));
   }
 
-
-
-
-
+  //go to path based on action
   render() {
     return(
       <Router>

@@ -5,7 +5,7 @@ import Post from './Post.jsx';
 import PostForm from './PostForm.jsx';
 
 function ShowAll(props) {
-  //taught how javascript syntac must be outside of html tags
+  //was taught how javascript syntax must be outside of html tags
   const space = props.posts.map((post, i) => (
       <div className='postDiv' key={i}>
       <Switch>
@@ -35,7 +35,8 @@ function ShowAll(props) {
 
     ));
 
-
+  /*if nothing loads or when something haven't showed up yet,
+  put large header of Loading*/
   let response;
   if (!space) {
     console.log('space', space);

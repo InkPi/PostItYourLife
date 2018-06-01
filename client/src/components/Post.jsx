@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Post.css';
 
+//give each post action: delete and edit
 function Post({ post, onDelete, onEdit}) {
   return (
     <div>

@@ -16,13 +16,16 @@ function saveToken(respBody) {
   return user;
 }
 
-//Post
+/*Posts*/
+
+//get
 function getPosts() {
   const req = fetch(`${BASE_URL}/post_its`).then(checkStatus);
   console.log('fetch', req)
   return req;
 }
 
+//create
 function createPost(post) {
   return fetch(`${BASE_URL}/post_its`, {
     method: 'Post',
@@ -33,6 +36,7 @@ function createPost(post) {
   }).then(checkStatus);
 }
 
+//destroy
 function deletePost(id) {
   const foo=() => {
     console.log('deleted');
@@ -42,6 +46,8 @@ function deletePost(id) {
   }).then(wantchocolate => foo())
 }
 
+//update
+//turn json into string
 function updatePost(post, id) {
   return fetch(`${BASE_URL}/post_its/${id}`, {
     method: 'PUT',
@@ -52,8 +58,9 @@ function updatePost(post, id) {
   }).then(checkStatus)
 }
 
-//Auth
+/* Auth */
 
+//login
 function login(creds) {
   return fetch(`${BASE_URL}/api/auth/register`, {
     method: 'POST',
@@ -64,6 +71,7 @@ function login(creds) {
   }).then(checkStatus).then(saveToken)
 }
 
+//register
 function register(creds) {
   return fetch(`${BASE_URL}/api/auth/register`, {
   method: 'POST',

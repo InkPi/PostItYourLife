@@ -37,6 +37,7 @@ module PostItApp
           origins '*'
           resource '*', headers: :any, methods: [:get, :post, :delete, :put, :options]
         end
+      #learned that I shouldn't forgot about this file to include some more methods to the db
       end
   end
 end
