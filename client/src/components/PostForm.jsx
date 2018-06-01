@@ -30,17 +30,19 @@ class PostForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.onSubmit(this.state.post);
+    this.props.onSubmit(this.state.post, this.props.id);
     this.setState({
       redirectHome:true
     });
   }
 
+
+
 render() {
   const { title, content, id } = this.state.post
   return (
     <form onSubmit={this.handleSubmit} className={id? 'edit' : 'create'}>
-      {this.state.redirectHome && <Redirect to='/' />}
+      {this.state.redirectHome && <Redirect to='/post_its' />}
       {!id && <h3>New Post</h3>}
       <label>
         <h4>Title</h4>

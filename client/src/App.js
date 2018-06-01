@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import './App.css';
 import ShowAll from './components/ShowAll';
 import PostForm from './components/PostForm';
@@ -30,21 +30,16 @@ class App extends Component {
   }
 
   componentDidMount() {
-    getPosts() //maybe heroku here //3000 become same look as 3001
+    getPosts() //coming out
       .then(data => {console.log('data',data);
         this.setState({
         posts: data //already out in array
       })}).catch((err)=> err.message);
+
+
+
   }
 
-  // componentDidMount(){
-  //   getPosts()
-  //   .then(resBody => {
-  //     this.setState({
-  //       posts: resBody.data
-  //     })
-  //   });
-  // }
 
   handleSubmit(post) {
     createPost(post)
@@ -70,27 +65,24 @@ class App extends Component {
   }
 
   handleEdit(post, id) {
-    console.log('Edit');
     console.log("this is id:", id);
-    updatePost(post, id)
+    updatePost(post, id) //got help: did not realize this had to be exact params in another file
     .then(resBody => {
-      console.log(resBody);
-      // this.setState((prevState, props) => {
-      //   //const { posts } = prevState;
-      //   const indx = prevState.posts.findIndex(p => {
+      console.log("this is resBody:", resBody);
 
-      //     console.log("this is p:", p.id == id);
-      //     return p.id == id
-      //   });
-      //   console.log("this is index:", indx);
-      //   return {
-      //     posts: [
-      //       ...prevState.slice(0, indx),
-      //       resBody.data,
-      //       ...prevState.slice(indx+1)
-      //     ]
-      //   }
-      // })
+      this.setState((prevState, props) => {
+        const { posts } = prevState; //destructoring method (got help, didn't know why I thought it was a param)
+        console.log('this is prevState:', prevState);
+        const indx = posts.findIndex(q => q.id === id);
+        console.log("this is index:", indx);
+        return {
+          posts: [
+            ...posts.slice(0, indx),
+            resBody.data,
+            ...posts.slice(indx+1)
+          ]
+        }
+      })
     });
   }
 
@@ -98,6 +90,10 @@ class App extends Component {
     login(creds)
       .then(user => this.setState({currentUser: user}));
   }
+
+
+
+
 
   render() {
     return(
@@ -108,15 +104,35 @@ class App extends Component {
             {!!this.state.currentUser || <Login onSubmit={this.handleLogin} />}
           </nav>
           <h2>Posts</h2>
+          <Switch>
           <Route
             render={()=> (<PostForm onSubmit={this.handleSubmit} />)}
             path='/new'
           />
-          <ShowAll
-          posts={this.state.posts}
-          onDelete={this.handleDelete}
-          onEdit={this.handleEdit}
+
+          <Route
+          exact path='/post_its'
+          render={() => (
+            <ShowAll
+            posts={this.state.posts}
+            onDelete={this.handleDelete}
+            onEdit={this.handleEdit}
           />
+          )}
+          />
+          <Route
+            path="/post_its/:id/edit"
+            label="edit"
+            render={({ match }) => (
+              <PostForm post={this.state.posts.filter(el => el.id === match.params.id)}
+                        onSubmit={this.handleEdit}
+                        id={match.params.id}
+              />)}
+            />
+
+
+
+           </Switch>
           </div>
         </Router>
     );

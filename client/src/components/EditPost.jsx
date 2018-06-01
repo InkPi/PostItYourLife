@@ -8,8 +8,12 @@ class EditPost extends Component ({ post, onDelete, onEditClick}) {
     super(props);
     this.state = {
       redirectHome: false
-      post:
-    }
+      post: Object.assign({
+        title: '',
+        content: '',
+      }, initialValue)
+    };
+    this.handle
   }
   return (
     <div>

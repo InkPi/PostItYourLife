@@ -5410,3 +5410,2990 @@ Processing by PostItsController#index as */*
 Completed 200 OK in 16ms (Views: 8.7ms | ActiveRecord: 7.3ms)
 
 
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:22:53 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 103ms (Views: 42.8ms | ActiveRecord: 55.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:22:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:23:04 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"jj", "content"=>"jj", "post_it"=>{"title"=>"jj", "content"=>"jj"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (14.8ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "jj"], ["content", "jj"], ["created_at", "2018-05-31 19:23:04.109514"], ["updated_at", "2018-05-31 19:23:04.109514"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 24ms (Views: 0.9ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:23:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:24:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (4.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:26:33 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:26:41 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:26:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:26:50 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:26:54 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:27:13 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:27:17 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:27:21 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:27:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:27:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:30:01 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:30:38 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:32:01 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 29ms (Views: 17.2ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:32:09 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:32:50 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:03 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:07 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:28 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:33:34 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:33 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:38 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:46 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:55 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:34:59 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:36:28 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:36:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:36:33 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:36:38 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:37:15 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:37:41 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:39:19 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:39:32 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 36ms (Views: 15.0ms | ActiveRecord: 18.3ms)
+
+
+Started DELETE "/post_its/1" for 127.0.0.1 at 2018-05-31 15:39:34 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[36mPostIt Destroy (13.2ms)[0m  [1m[31mDELETE FROM "post_its" WHERE "post_its"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:38
+Completed 204 No Content in 53ms (ActiveRecord: 35.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:39:34 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:40:16 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 39ms (Views: 27.3ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:40:21 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (5.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 5.8ms)
+
+
+Started DELETE "/post_its/23" for 127.0.0.1 at 2018-05-31 15:40:25 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[36mPostIt Destroy (0.5ms)[0m  [1m[31mDELETE FROM "post_its" WHERE "post_its"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:38
+Completed 204 No Content in 61ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:40:25 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:42:14 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:42:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:42:44 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:42:51 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:47:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:47:39 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"flowe", "content"=>"bloom", "post_it"=>{"title"=>"flowe", "content"=>"bloom"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (6.0ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "flowe"], ["content", "bloom"], ["created_at", "2018-05-31 19:47:39.770264"], ["updated_at", "2018-05-31 19:47:39.770264"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 19ms (Views: 1.9ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:47:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:48:01 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"Thursss", "content"=>"www", "post_it"=>{"title"=>"Thursss", "content"=>"www"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.6ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Thursss"], ["content", "www"], ["created_at", "2018-05-31 19:48:01.201616"], ["updated_at", "2018-05-31 19:48:01.201616"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:48:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-31 15:50:17 -0400
+Processing by PostItsController#index as HTML
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:51:19 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:51:28 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:53:16 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:53:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (129.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 162ms (Views: 32.4ms | ActiveRecord: 129.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:53:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:53:49 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"Thurs", "content"=>"", "post_it"=>{"title"=>"Thurs", "content"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.6ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Thurs"], ["content", ""], ["created_at", "2018-05-31 19:53:49.869741"], ["updated_at", "2018-05-31 19:53:49.869741"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 13ms (Views: 2.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:53:54 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:55:06 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (10.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 21ms (Views: 9.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:55:17 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:55:24 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"yyyt", "content"=>"", "post_it"=>{"title"=>"yyyt", "content"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (2.2ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "yyyt"], ["content", ""], ["created_at", "2018-05-31 19:55:24.143834"], ["updated_at", "2018-05-31 19:55:24.143834"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 9ms (Views: 0.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:55:28 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:55:55 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:56:02 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"rrr", "content"=>"", "post_it"=>{"title"=>"rrr", "content"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.9ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "rrr"], ["content", ""], ["created_at", "2018-05-31 19:56:02.475758"], ["updated_at", "2018-05-31 19:56:02.475758"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 14ms (Views: 0.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:56:06 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:58:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 15:58:35 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"y", "content"=>"y", "post_it"=>{"title"=>"y", "content"=>"y"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.8ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "y"], ["content", "y"], ["created_at", "2018-05-31 19:58:35.103421"], ["updated_at", "2018-05-31 19:58:35.103421"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 9ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 15:58:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:02:18 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:07:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (53.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 82ms (Views: 27.6ms | ActiveRecord: 53.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:08:02 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:09:02 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:09:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:09:35 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"s", "content"=>"s", "id"=>"undefined", "post_it"=>{"title"=>"s", "content"=>"s"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 38ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:09:48 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:09:53 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:09:59 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sss", "content"=>"sss", "id"=>"undefined", "post_it"=>{"title"=>"sss", "content"=>"sss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:10:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:11:02 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:11:13 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"zz", "content"=>"zzz", "id"=>"undefined", "post_it"=>{"title"=>"zz", "content"=>"zzz"}}
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 2ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:12:16 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:12:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 3.2ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:12:45 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ffff", "content"=>"ffff", "id"=>"undefined", "post_it"=>{"title"=>"ffff", "content"=>"ffff"}}
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:12:53 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 16:13:01 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"fffooo", "content"=>"fff", "post_it"=>{"title"=>"fffooo", "content"=>"fff"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (4.6ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "fffooo"], ["content", "fff"], ["created_at", "2018-05-31 20:13:01.315227"], ["updated_at", "2018-05-31 20:13:01.315227"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 11ms (Views: 0.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:13:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:13:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (17.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 23ms (Views: 5.7ms | ActiveRecord: 17.4ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:13:34 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"s", "content"=>"s", "id"=>"undefined", "post_it"=>{"title"=>"s", "content"=>"s"}}
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 4ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:13:40 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:13:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:13:50 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"d", "content"=>"d", "id"=>"undefined", "post_it"=>{"title"=>"d", "content"=>"d"}}
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 3ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:13:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:25:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:26:17 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 16:26:23 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"bb", "content"=>"bb", "id"=>"undefined", "post_it"=>{"title"=>"bb", "content"=>"bb"}}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 10ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:26:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:27:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:28:48 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (6.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:32:37 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:42:01 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:42:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 16:42:20 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"s", "content"=>"s", "post_it"=>{"title"=>"s", "content"=>"s"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (6.2ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "s"], ["content", "s"], ["created_at", "2018-05-31 20:42:20.660984"], ["updated_at", "2018-05-31 20:42:20.660984"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 26ms (Views: 1.2ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:42:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:43:16 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:52:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:53:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 16:54:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:00:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:03:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:07:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:07:36 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:10:13 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:10:35 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:11:00 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:12:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (4.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:15:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:16:28 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:16:54 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:17:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:18:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:23:42 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:24:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:29:36 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:30:13 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:30:31 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:31:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:33:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:34:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:34:41 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:35:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:36:10 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:38:22 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (7.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:38:37 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:40:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 17:40:51 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:35:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 63ms (Views: 53.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:35:18 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 18:35:23 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"s", "content"=>"s", "id"=>"undefined", "post_it"=>{"title"=>"s", "content"=>"s"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 6ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:35:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:35:36 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 18:35:42 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"s", "content"=>"ss", "id"=>"undefined", "post_it"=>{"title"=>"s", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:39:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:39:35 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:39:40 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 18:39:46 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"undefined", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 3ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:49:01 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:49:16 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 18:52:49 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"zz", "content"=>"zzz", "id"=>"undefined", "post_it"=>{"title"=>"zz", "content"=>"zzz"}}
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:53:58 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (5.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 18:54:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 18:54:08 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"xxx", "content"=>"xxx", "id"=>"undefined", "post_it"=>{"title"=>"xxx", "content"=>"xxx"}}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:01:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:01:53 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"oyoy", "content"=>"9o8yp98y", "id"=>"undefined", "post_it"=>{"title"=>"oyoy", "content"=>"9o8yp98y"}}
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:02:10 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (4.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:02:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:02:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:02:46 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sdkjfhs", "content"=>"dfhkd\n", "id"=>"undefined", "post_it"=>{"title"=>"sdkjfhs", "content"=>"dfhkd\n"}}
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 3ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:04:21 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:04:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:04:32 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dfis", "content"=>"fdifjs", "id"=>"undefined", "post_it"=>{"title"=>"dfis", "content"=>"fdifjs"}}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:06:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:06:43 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:06:48 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"jlfsdj", "content"=>"fkdj", "id"=>"undefined", "post_it"=>{"title"=>"jlfsdj", "content"=>"fkdj"}}
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:09:13 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:09:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:09:34 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"fhsh", "content"=>"fjskf", "id"=>"undefined", "post_it"=>{"title"=>"fhsh", "content"=>"fjskf"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:10:15 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:10:19 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:10:24 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dfjs", "content"=>"dskfjls", "id"=>"undefined", "post_it"=>{"title"=>"dfjs", "content"=>"dskfjls"}}
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:11:48 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:11:55 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:12:01 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"fkdfj", "content"=>"djfs", "id"=>"undefined", "post_it"=>{"title"=>"fkdfj", "content"=>"djfs"}}
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:15:11 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:15:18 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:15:23 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"fjdfs", "content"=>"ksfd", "id"=>"undefined", "post_it"=>{"title"=>"fjdfs", "content"=>"ksfd"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:15:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (6.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:17:02 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (6.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 7.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:17:48 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:18:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:23:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:24:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:25:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/post_its/undefined" for 127.0.0.1 at 2018-05-31 19:25:28 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"jkfhks", "content"=>"dsjfhsk", "id"=>"undefined", "post_it"=>{"title"=>"jkfhks", "content"=>"dsjfhsk"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PostIt with 'id'=undefined):
+  
+app/controllers/post_its_controller.rb:44:in `set_post_it'
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:25:51 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (70.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 79ms (Views: 7.7ms | ActiveRecord: 70.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:25:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/post_its/2" for 127.0.0.1 at 2018-05-31 19:26:03 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sdkfjs", "content"=>"fjksk", "id"=>"2", "post_it"=>{"title"=>"sdkfjs", "content"=>"fjksk"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (26.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "sdkfjs"], ["content", "fjksk"], ["updated_at", "2018-05-31 23:26:03.948573"], ["id", 2]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 55ms (Views: 0.5ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:26:43 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (6.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:26:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/post_its/3" for 127.0.0.1 at 2018-05-31 19:26:53 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"vklj", "content"=>"dkfsl", "id"=>"3", "post_it"=>{"title"=>"vklj", "content"=>"dkfsl"}}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (5.6ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "vklj"], ["content", "dkfsl"], ["updated_at", "2018-05-31 23:26:53.873635"], ["id", 3]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:27:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:27:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:28:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/post_its/5" for 127.0.0.1 at 2018-05-31 19:28:27 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"fkljs", "content"=>"kdfjsl", "id"=>"5", "post_it"=>{"title"=>"fkljs", "content"=>"kdfjsl"}}
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (11.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "fkljs"], ["content", "kdfjsl"], ["updated_at", "2018-05-31 23:28:27.824996"], ["id", 5]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:28:53 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:28:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:29:01 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (8.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 8.5ms)
+
+
+Started PUT "/post_its/11" for 127.0.0.1 at 2018-05-31 19:29:23 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"fkjdkf", "content"=>"dfjd", "id"=>"11", "post_it"=>{"title"=>"fkjdkf", "content"=>"dfjd"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "fkjdkf"], ["content", "dfjd"], ["updated_at", "2018-05-31 23:29:23.021216"], ["id", 11]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:29:31 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:31:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:31:59 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 3.6ms)
+
+
+Started PUT "/post_its/12" for 127.0.0.1 at 2018-05-31 19:32:06 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dlifj", "content"=>"sdkjf", "id"=>"12", "post_it"=>{"title"=>"dlifj", "content"=>"sdkjf"}}
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (5.7ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "dlifj"], ["content", "sdkjf"], ["updated_at", "2018-05-31 23:32:06.545724"], ["id", 12]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:32:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (5.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:32:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/post_its/13" for 127.0.0.1 at 2018-05-31 19:32:31 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dgfs", "content"=>"dflkgjd", "id"=>"13", "post_it"=>{"title"=>"dgfs", "content"=>"dflkgjd"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "dgfs"], ["content", "dflkgjd"], ["updated_at", "2018-05-31 23:32:31.860923"], ["id", 13]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:33:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 3.1ms)
+
+
+Started PUT "/post_its/14" for 127.0.0.1 at 2018-05-31 19:33:32 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"", "content"=>"", "id"=>"14", "post_it"=>{"title"=>"", "content"=>""}}
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", ""], ["content", ""], ["updated_at", "2018-05-31 23:33:32.971425"], ["id", 14]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 13ms (Views: 1.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:35:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:40:59 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (7.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 19ms (Views: 11.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:41:11 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 19:41:30 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"new post", "content"=>"here's a post", "post_it"=>{"title"=>"new post", "content"=>"here's a post"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.8ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "new post"], ["content", "here's a post"], ["created_at", "2018-05-31 23:41:30.872588"], ["updated_at", "2018-05-31 23:41:30.872588"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 16ms (Views: 2.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:41:35 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:41:51 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/post_its/32" for 127.0.0.1 at 2018-05-31 19:42:06 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"", "content"=>"there it was", "id"=>"32", "post_it"=>{"title"=>"", "content"=>"there it was"}}
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", ""], ["content", "there it was"], ["updated_at", "2018-05-31 23:42:06.136258"], ["id", 32]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:42:11 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:42:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (5.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:44:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:47:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/post_its/17" for 127.0.0.1 at 2018-05-31 19:47:23 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dfj", "content"=>"fkh", "id"=>"17", "post_it"=>{"title"=>"dfj", "content"=>"fkh"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.6ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "dfj"], ["content", "fkh"], ["updated_at", "2018-05-31 23:47:23.467563"], ["id", 17]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:48:34 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (40.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 49ms (Views: 8.1ms | ActiveRecord: 40.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:48:40 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/post_its/18" for 127.0.0.1 at 2018-05-31 19:48:45 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sss", "content"=>"sss", "id"=>"18", "post_it"=>{"title"=>"sss", "content"=>"sss"}}
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (1.0ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "sss"], ["content", "sss"], ["updated_at", "2018-05-31 23:48:45.668428"], ["id", 18]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:50:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:50:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/19" for 127.0.0.1 at 2018-05-31 19:50:36 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sddsd", "content"=>"dsds", "id"=>"19", "post_it"=>{"title"=>"sddsd", "content"=>"dsds"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "sddsd"], ["content", "dsds"], ["updated_at", "2018-05-31 23:50:36.590853"], ["id", 19]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:51:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/20" for 127.0.0.1 at 2018-05-31 19:51:44 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dd", "content"=>"dd", "id"=>"20", "post_it"=>{"title"=>"dd", "content"=>"dd"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "dd"], ["content", "dd"], ["updated_at", "2018-05-31 23:51:44.120484"], ["id", 20]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:52:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (36.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 45ms (Views: 8.0ms | ActiveRecord: 36.8ms)
+
+
+Started PUT "/post_its/21" for 127.0.0.1 at 2018-05-31 19:52:18 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"21", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-05-31 23:52:18.187179"], ["id", 21]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:52:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:53:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/post_its/22" for 127.0.0.1 at 2018-05-31 19:53:16 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ddd", "content"=>"dd", "id"=>"22", "post_it"=>{"title"=>"ddd", "content"=>"dd"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ddd"], ["content", "dd"], ["updated_at", "2018-05-31 23:53:16.181240"], ["id", 22]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:53:52 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/24" for 127.0.0.1 at 2018-05-31 19:54:05 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sss", "content"=>"sss", "id"=>"24", "post_it"=>{"title"=>"sss", "content"=>"sss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.6ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "sss"], ["content", "sss"], ["updated_at", "2018-05-31 23:54:05.289043"], ["id", 24]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:54:34 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:54:40 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:54:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/post_its/25" for 127.0.0.1 at 2018-05-31 19:55:00 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"sss", "id"=>"25", "post_it"=>{"title"=>"ss", "content"=>"sss"}}
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (1.9ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "sss"], ["updated_at", "2018-05-31 23:55:00.068700"], ["id", 25]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:55:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (16.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 25ms (Views: 7.5ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:55:16 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:55:25 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:55:57 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 3.6ms)
+
+
+Started PUT "/post_its/26" for 127.0.0.1 at 2018-05-31 19:56:01 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"26", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.3ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-05-31 23:56:01.107345"], ["id", 26]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:56:21 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/post_its/27" for 127.0.0.1 at 2018-05-31 19:56:25 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ddd", "content"=>"dd", "id"=>"27", "post_it"=>{"title"=>"ddd", "content"=>"dd"}}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (6.1ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ddd"], ["content", "dd"], ["updated_at", "2018-05-31 23:56:25.250490"], ["id", 27]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:57:08 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/28" for 127.0.0.1 at 2018-05-31 19:57:12 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"28", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (1.1ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-05-31 23:57:12.190393"], ["id", 28]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:58:17 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/post_its/29" for 127.0.0.1 at 2018-05-31 19:58:20 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"29", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-05-31 23:58:20.565856"], ["id", 29]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:58:58 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 19:59:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/post_its/30" for 127.0.0.1 at 2018-05-31 19:59:37 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"sss", "content"=>"sss", "id"=>"30", "post_it"=>{"title"=>"sss", "content"=>"sss"}}
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "sss"], ["content", "sss"], ["updated_at", "2018-05-31 23:59:37.633381"], ["id", 30]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:00:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/post_its/31" for 127.0.0.1 at 2018-05-31 20:00:49 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"31", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.6ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-06-01 00:00:49.701176"], ["id", 31]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:02:00 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:03:40 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 3.2ms)
+
+
+Started PUT "/post_its/2" for 127.0.0.1 at 2018-05-31 20:04:04 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"asdd", "content"=>"asd", "id"=>"2", "post_it"=>{"title"=>"asdd", "content"=>"asd"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.6ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "asdd"], ["content", "asd"], ["updated_at", "2018-06-01 00:04:04.283791"], ["id", 2]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:04:36 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 2.3ms)
+
+
+Started PUT "/post_its/3" for 127.0.0.1 at 2018-05-31 20:04:40 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"fff", "content"=>"ff", "id"=>"3", "post_it"=>{"title"=>"fff", "content"=>"ff"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "fff"], ["content", "ff"], ["updated_at", "2018-06-01 00:04:40.091505"], ["id", 3]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:05:08 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:05:22 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:05:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/post_its/5" for 127.0.0.1 at 2018-05-31 20:05:49 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[36mPostIt Destroy (0.5ms)[0m  [1m[31mDELETE FROM "post_its" WHERE "post_its"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:38
+Completed 204 No Content in 19ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:05:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/post_its/12" for 127.0.0.1 at 2018-05-31 20:05:52 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[36mPostIt Destroy (0.3ms)[0m  [1m[31mDELETE FROM "post_its" WHERE "post_its"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:38
+Completed 204 No Content in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:05:52 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 3.0ms)
+
+
+Started PUT "/post_its/13" for 127.0.0.1 at 2018-05-31 20:05:59 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"sss", "id"=>"13", "post_it"=>{"title"=>"ss", "content"=>"sss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "sss"], ["updated_at", "2018-06-01 00:05:59.104098"], ["id", 13]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:06:11 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/post_its/11" for 127.0.0.1 at 2018-05-31 20:06:15 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"11", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (7.7ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-06-01 00:06:15.231622"], ["id", 11]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:06:35 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/post_its/14" for 127.0.0.1 at 2018-05-31 20:06:44 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"14", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.5ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-06-01 00:06:44.473370"], ["id", 14]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:07:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (13.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 23ms (Views: 9.7ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:07:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/post_its/32" for 127.0.0.1 at 2018-05-31 20:09:04 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"Omg", "content"=>"ooo wow", "id"=>"32", "post_it"=>{"title"=>"Omg", "content"=>"ooo wow"}}
+  [1m[36mPostIt Load (7.2ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "Omg"], ["content", "ooo wow"], ["updated_at", "2018-06-01 00:09:04.871736"], ["id", 32]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:09:08 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:12:33 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:13:25 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:14:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/post_its/17" for 127.0.0.1 at 2018-05-31 20:14:24 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"17", "post_it"=>{"title"=>"ss", "content"=>"ss"}}
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (1.9ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "ss"], ["content", "ss"], ["updated_at", "2018-06-01 00:14:24.470544"], ["id", 17]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:14:31 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (28.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 36ms (Views: 8.1ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:15:10 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 20:16:36 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"dd", "content"=>"ddd", "post_it"=>{"title"=>"dd", "content"=>"ddd"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.4ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "dd"], ["content", "ddd"], ["created_at", "2018-06-01 00:16:36.394491"], ["updated_at", "2018-06-01 00:16:36.394491"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 12ms (Views: 1.4ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:17:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 20:17:30 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"", "post_it"=>{"id"=>"", "title"=>"ss", "content"=>"ss"}}
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.4ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "ss"], ["content", "ss"], ["created_at", "2018-06-01 00:17:30.214291"], ["updated_at", "2018-06-01 00:17:30.214291"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 13ms (Views: 0.6ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:17:44 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (30.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 49ms (Views: 18.2ms | ActiveRecord: 30.6ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 20:17:47 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"ss", "content"=>"ss", "id"=>"", "post_it"=>{"id"=>"", "title"=>"ss", "content"=>"ss"}}
+Unpermitted parameter: :id
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.5ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "ss"], ["content", "ss"], ["created_at", "2018-06-01 00:17:47.441169"], ["updated_at", "2018-06-01 00:17:47.441169"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 16ms (Views: 1.0ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:17:58 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (5.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 20:19:34 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"ff", "content"=>"gvg", "post_it"=>{"title"=>"ff", "content"=>"gvg"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.7ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "ff"], ["content", "gvg"], ["created_at", "2018-06-01 00:19:34.756484"], ["updated_at", "2018-06-01 00:19:34.756484"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 13ms (Views: 0.7ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:20:06 -0400
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 47ms (Views: 19.4ms | ActiveRecord: 25.2ms)
+
+
+Started DELETE "/post_its/18" for 127.0.0.1 at 2018-05-31 20:20:12 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mPostIt Load (4.0ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[36mPostIt Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_its" WHERE "post_its"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/post_its_controller.rb:38
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:38
+Completed 204 No Content in 26ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:20:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.1ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/post_its" for 127.0.0.1 at 2018-05-31 20:20:21 -0400
+Processing by PostItsController#create as */*
+  Parameters: {"title"=>"v ", "content"=>" f", "post_it"=>{"title"=>"v ", "content"=>" f"}}
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[36mPostIt Create (0.7ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "v "], ["content", " f"], ["created_at", "2018-06-01 00:20:21.074785"], ["updated_at", "2018-06-01 00:20:21.074785"]]
+  ↳ app/controllers/post_its_controller.rb:20
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:20
+Completed 201 Created in 18ms (Views: 2.0ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:21:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/post_its/19" for 127.0.0.1 at 2018-05-31 20:21:33 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"kidjh", "content"=>"sfjs", "id"=>"19", "post_it"=>{"title"=>"kidjh", "content"=>"sfjs"}}
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.4ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "kidjh"], ["content", "sfjs"], ["updated_at", "2018-06-01 00:21:33.845887"], ["id", 19]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:23:10 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/post_its/20" for 127.0.0.1 at 2018-05-31 20:23:58 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"dkfjs", "content"=>"dsfkjdsn", "id"=>"20", "post_it"=>{"title"=>"dkfjs", "content"=>"dsfkjdsn"}}
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.6ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "dkfjs"], ["content", "dsfkjdsn"], ["updated_at", "2018-06-01 00:23:58.726392"], ["id", 20]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:25:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:28:43 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-05-31 20:33:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:21:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (18.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 33ms (Views: 13.8ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:21:51 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:21:55 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:22:14 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:22:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:22:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:22:41 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:26:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:28:08 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:28:15 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:30:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:30:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:31:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:31:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:31:38 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:32:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:32:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/post_it" for 127.0.0.1 at 2018-06-01 10:33:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/post_it"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-06-01 10:33:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:35:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:35:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:35:31 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:36:21 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (1.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:36:50 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:37:16 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:37:22 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (2.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:37:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:38:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (33.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 41ms (Views: 7.3ms | ActiveRecord: 33.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:38:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (3.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 3.6ms)
+
+
+Started PUT "/post_its/21" for 127.0.0.1 at 2018-06-01 10:39:04 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"gg", "content"=>"gg", "id"=>"21", "post_it"=>{"title"=>"gg", "content"=>"gg"}}
+  [1m[36mPostIt Load (6.4ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (31.7ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "gg"], ["content", "gg"], ["updated_at", "2018-06-01 14:39:04.985121"], ["id", 21]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 73ms (Views: 0.4ms | ActiveRecord: 59.1ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:39:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/post_its/22" for 127.0.0.1 at 2018-06-01 10:39:30 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"doodle", "content"=>"", "id"=>"22", "post_it"=>{"title"=>"doodle", "content"=>""}}
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT  "post_its".* FROM "post_its" WHERE "post_its"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/post_its_controller.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[36mPostIt Update (0.3ms)[0m  [1m[33mUPDATE "post_its" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "post_its"."id" = $4[0m  [["title", "doodle"], ["content", ""], ["updated_at", "2018-06-01 14:39:30.536924"], ["id", 22]]
+  ↳ app/controllers/post_its_controller.rb:29
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_its_controller.rb:29
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:39:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_its" for 127.0.0.1 at 2018-06-01 10:40:34 -0400
+Processing by PostItsController#index as */*
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:8
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+

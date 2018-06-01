@@ -2,28 +2,15 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Post from './Post.jsx';
-import PostForm from './PostForm.jsx'
+import PostForm from './PostForm.jsx';
 
 function ShowAll(props) {
   //taught how javascript syntac must be outside of html tags
-  const space = props.posts.map(post => (
-      <div className='postDiv'>
-
-      <Switch key={post.id}>
-
+  const space = props.posts.map((post, i) => (
+      <div className='postDiv' key={i}>
+      <Switch>
           <Route
-            path={`posts/${post.id}/edit`}
-            render={() => (
-              <li>
-                <PostForm
-                  onSubmit={updatedPost => props.onEdit(updatedPost, updatedPost.id)}
-                  initialValue={post}
-                />
-              </li>
-            )}
-            />
-          <Route
-            path={`/posts/`}
+            exact path='/post_its'
             render={() => (
               <Post
                 onDelete={()=> props.onDelete(post.id)}
@@ -31,7 +18,19 @@ function ShowAll(props) {
               />
             )}
           />
-          </Switch>
+          <Route
+            path={`/post_its/${post.id}/edit`}
+            render={() => (
+              <li>
+                <PostForm
+                  //onSubmit={updatedPost => props.onEdit(updatedPost, updatedPost.id)}
+                  onSubmit={props.onEdit}
+                  initialValue={post}
+                />
+              </li>
+            )}
+          />
+        </Switch>
         </div>
 
     ));

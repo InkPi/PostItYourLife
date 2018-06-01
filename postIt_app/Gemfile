@@ -6,6 +6,7 @@ gem 'rack-cors', require: 'rack/cors'
 #https://mattboldt.com/react-rails-form-refactor/
 gem 'devise'
 gem 'react-rails'
+gem 'knock'
 
 #https://www.webascender.com/blog/rails-react-forms-validations-real-time-updates/
 gem 'haml-rails'

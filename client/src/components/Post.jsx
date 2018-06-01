@@ -8,10 +8,10 @@ function Post({ post, onDelete, onEdit}) {
     <form>
     <h1>{post.title}</h1>
       <p>{post.content}<button onClick={onDelete}>X</button></p>
-      <Link to={`posts/${post.id}/edit`}>Edit</Link>
-      </form>
+      <Link to={`post_its/${post.id}/edit`}>Edit</Link>
+    </form>
     </div>
   )
 }
-
+//maybe props.post.title
 export default Post

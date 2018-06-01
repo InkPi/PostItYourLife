@@ -1,7 +1,7 @@
 import jwtDecode from 'jwt-decode';
 
 const BASE_URL= process.env.REACT_APP_BASE_URL;
-
+//Realized I put starting url /, after 3000, different for posts compared to other files
 //check for errors
 function checkStatus(resp) {
   if (!resp.ok) throw new Error(resp.statusMessage);
@@ -43,16 +43,13 @@ function deletePost(id) {
 }
 
 function updatePost(post, id) {
-  const foo=() => {
-    console.log('updated');
-  }
   return fetch(`${BASE_URL}/post_its/${id}`, {
     method: 'PUT',
     body: JSON.stringify(post),
     headers: {
       'content-type': 'application/json'
     }
-  }).then(wantchocolate => foo())
+  }).then(checkStatus)
 }
 
 //Auth
