@@ -5,6 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#https://medium.com/@nick.hartunian/knock-jwt-auth-for-rails-api-create-react-app-6765192e295a
+admin = User.new
+admin.username = 'AdmonDigi'
+admin.password = 'allgr33nRuby'
+admin.password_confirmation = 'allgr33nRuby'
+admin.admin = true
+admin.save
+
+user = User.new
+user.username = 'UserLove'
+user.password = '12345'
+user.password_confirmation = '12345'
+user.save
+
 post = PostIt.create(
   [
     {

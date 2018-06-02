@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  post 'user_token' => 'user_token#create'
-  devise_for :users
-  resources :post_its
-  resources :users
-  # devise_for :users
-  #get 'users/new'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  #resources :post_it
-  #I think this is wrong?
-  root to: "post_its#index"
+  #https://medium.com/@nick.hartunian/knock-jwt-auth-for-rails-api-create-react-app-6765192e295a
+  scope '/api' do
+    # post 'user_token' => 'user_token#create'
+    resources :post_its
+    resources :users
+    post 'user_token' => 'user_token#create'
+
+  end
+
 end

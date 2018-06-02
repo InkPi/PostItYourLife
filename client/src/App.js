@@ -21,25 +21,103 @@ class App extends Component {
     super(props);
     this.state = {
       posts: [],
-      currentUser: null
+      username: '',
+      password: '',
+      currentUser: null,
     };
+    this.getPosts = this.getPosts.bind(this);
+    this.logout = this.logout.bind(this);
+    this.login = this.login.bind(this);
+    this.currentUser = this.currentUser.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
-    this.handleLogin = this.handleLogin.bind(this);
+    //this.handleLogin = this.handleLogin.bind(this);
   }
+
+  currentUser() {
+    const res = !!(localStorage.getItem("jwt"));
+    this.setState({
+      currentUser: res,
+    })
+    return res;
+  }
+
+//   getPosts() {
+//     const jwt = localStorage.getItem("jwt")
+//     const init = {
+//       headers: {"Authorization": `Bearer ${jwt}`
+//     }
+//     fetch(`${BASE_URL}/post_its`, init)
+//     .then(res => res.json())
+//     .then(data => this.setState({
+//       posts: data,
+//   }))
+//     .then(console.log('state post', this.state.posts))
+//     .catch(err => err);
+//     console.log('currentUser', currentUser);
+// }
+
+  getPosts() {
+    const jwt = localStorage.getItem("jwt")
+    const init = {
+      headers: {"Authorization": `Bearer ${jwt}`}
+    }
+    fetch(`${BASE_URL}/api/post_its/${this.state.username}`, init)
+    .then(res => res.json())
+    .then(data => this.setState({
+      posts: data,
+    }))
+    .catch(err => err)
+  }
+
+handleChange(e) {
+  this.setState({
+    [e.target.name]:e.target.value
+  })
+}
+
+logout() {
+  localStorage.removeItem("jwt")
+  this.setState({
+    currentUser: false,
+    posts: [],
+  })
+}
+
+login() {
+  const url = `${BASE_URL}/api/user_token`;
+  const body = {"auth": {"email": this.state.email, "password": this.state.password}}
+  const init = {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+    mode: 'cors',
+    body: JSON.stringify(body),
+  }
+  fetch(url, init)
+    .then(res => res.json())
+    .then(res => localStorage.setItem("jwt", res.jwt))
+    .then(() => this.setState({
+      currentUser: true,
+    }))
+    .then(() => this.getPosts())
+    .catch(err => console.log(err))
+    }
+
+    componentDidMount() {
+      this.currentUser();
+      this.getPosts();
+    }
 
   //set data of arrays onto screen
-  componentDidMount() {
-    getPosts() //coming out
-      .then(data => {console.log('data',data);
-        this.setState({
-        posts: data //already out in array
-      })}).catch((err)=> err.message);
-
-
-
-  }
+  // componentDidMount() {
+  //   getPosts() //coming out
+  //     .then(data => {console.log('data',data);
+  //       this.setState({
+  //       posts: data //already out in array
+  //     })}).catch((err)=> err.message);
+  // }
 
   //delete action
   handleSubmit(post) {
@@ -86,22 +164,63 @@ class App extends Component {
     });
   }
 
+
+
   //lab
-  handleLogin(creds) {
-    login(creds)
-      .then(user => this.setState({currentUser: user}));
-  }
+  // handleLogin(creds) {
+  //   login(creds)
+  //     .then(user => this.setState({currentUser: user}));
+  // }
 
   //go to path based on action
   render() {
+    console.log(this.state.posts, "the posts");
+    const display = this.state.posts && this.state.currentUser ? this.state.posts.map (post => {
+      return <p key={post.id}> Name:{post.name}, Content:{post.content} </p>
+    }) : "UNAUTHORIZED";
     return(
       <Router>
         <div className="App">
+          <div className="landing">
           <nav>
             <Link to ='/new'>Create</Link>
             {!!this.state.currentUser || <Login onSubmit={this.handleLogin} />}
           </nav>
-          <h2>Posts</h2>
+          <h1>Post It Your Life</h1>
+        <form>
+          <label htmlFor="username">username: </label>
+          <br />
+          <input
+            name="username"
+            onChange={this.handleChange}
+            value={this.state.username}
+            type="username"
+          />
+          <br /><br />
+          <label htmlFor="password">Password:</label>
+          <br />
+          <input
+            name="password"
+            onChange={this.handleChange}
+            value={this.state.value}
+            type="password"
+          />
+          </form>
+          <br />
+          <button onClick={this.login}>
+          Login
+          </button>
+
+          <button onClick={this.logout}>
+          Logout
+          </button>
+
+          <button onClick={this.getPosts}>
+          Get Posts
+          </button>
+
+          <div> {display} </div>
+          </div>
           <Switch>
           <Route
             render={()=> (<PostForm onSubmit={this.handleSubmit} />)}
@@ -109,26 +228,24 @@ class App extends Component {
           />
 
           <Route
-          exact path='/post_its'
+          exact path='/api/post_its'
           render={() => (
             <ShowAll
             posts={this.state.posts}
             onDelete={this.handleDelete}
             onEdit={this.handleEdit}
-          />
+            />
           )}
           />
           <Route
-            path="/post_its/:id/edit"
+            path="/api/post_its/:id/edit"
             label="edit"
             render={({ match }) => (
               <PostForm post={this.state.posts.filter(el => el.id === match.params.id)}
                         onSubmit={this.handleEdit}
                         id={match.params.id}
               />)}
-            />
-
-
+          />
 
            </Switch>
           </div>
@@ -136,36 +253,5 @@ class App extends Component {
     );
   }
 }
-
-// class App extends Component {
-//   constructor() {
-//     super();
-
-//     this.state = {
-//       //https://www.robinwieruch.de/local-storage-react/
-//       postit: []
-//     }
-
-//     }
-
-//   componentDidMount() {
-//     fetch(`${BASE_URL}/post_it`) //maybe heroku here //3000 become same look as 3001
-//       .then(resp => resp.json())
-//       .then(data => this.setState({
-//         postit: data.postit
-//       }));
-//   }
-
-//   render() {
-//     return (
-//       <div className="App">
-//         <div>Hey there</div>
-//         <div>{JSON.stringify(this.state.postit)}</div>
-//         <ShowPosts />
-//         <div>{BASE_URL}</div>
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

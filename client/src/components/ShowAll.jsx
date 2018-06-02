@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Switch, Route, Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import Post from './Post.jsx';
 import PostForm from './PostForm.jsx';

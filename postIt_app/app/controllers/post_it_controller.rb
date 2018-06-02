@@ -1,4 +1,5 @@
 class PostItController < ApplicationController
+  before_action :authenticate_user
   before_action :set_post_it, only: [:show, :update, :destroy]
 
   # GET /post_its
