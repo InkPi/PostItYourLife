@@ -3,9 +3,9 @@
 one:
   email: MyString
   password_digest: MyString
-  admin: false
+  #admin: false
 
 two:
   email: MyString
   password_digest: MyString
-  admin: false
+  #admin: false

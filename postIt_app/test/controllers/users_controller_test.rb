@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
+  skip_before_action :verify_authenticity_token
   setup do
     @user = users(:one)
   end
@@ -12,7 +13,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create user" do
     assert_difference('User.count') do
-      post users_url, params: { user: { admin: @user.admin, email: @user.email, password_digest: @user.password_digest } }, as: :json
+      post users_url, params: { user: { email: @user.email, password_digest: @user.password_digest } }, as: :json
+      #post users_url, params: { user: { admin: @user.admin, email: @user.email, password_digest: @user.password_digest } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +26,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update user" do
-    patch user_url(@user), params: { user: { admin: @user.admin, email: @user.email, password_digest: @user.password_digest } }, as: :json
+    patch user_url(@user), params: { user: { email: @user.email, password_digest: @user.password_digest } }, as: :json
+    #patch user_url(@user), params: { user: { admin: @user.admin, email: @user.email, password_digest: @user.password_digest } }, as: :json
     assert_response 200
   end
 

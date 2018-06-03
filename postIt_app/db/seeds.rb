@@ -7,18 +7,20 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #https://medium.com/@nick.hartunian/knock-jwt-auth-for-rails-api-create-react-app-6765192e295a
-admin = User.new
-admin.username = 'AdmonDigi'
-admin.password = 'allgr33nRuby'
-admin.password_confirmation = 'allgr33nRuby'
-admin.admin = true
-admin.save
+# admin = User.new
+# admin.email = 'AdmonDigi@g.com'
+# admin.password = 'allgr33nRuby'
+# admin.password_confirmation = 'allgr33nRuby'
+# admin.admin = true
+# admin.save
 
-user = User.new
-user.username = 'UserLove'
-user.password = '12345'
-user.password_confirmation = '12345'
-user.save
+# user = User.new
+# user.email = 'lxz1098@yahoo.com'
+# user.password = '12345'
+# user.password_confirmation = '12345'
+# user.save
+
+users = User.create({ email:'lxz1098@yahoo.com', password: '12345', password_confirmation: '12345'})
 
 post = PostIt.create(
   [

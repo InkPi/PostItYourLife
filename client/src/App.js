@@ -21,7 +21,7 @@ class App extends Component {
     super(props);
     this.state = {
       posts: [],
-      username: '',
+      email: '',
       password: '',
       currentUser: null,
     };
@@ -64,7 +64,7 @@ class App extends Component {
     const init = {
       headers: {"Authorization": `Bearer ${jwt}`}
     }
-    fetch(`${BASE_URL}/api/post_its/${this.state.username}`, init)
+    fetch(`${BASE_URL}/api/post_its`, init)
     .then(res => res.json())
     .then(data => this.setState({
       posts: data,
@@ -88,22 +88,21 @@ logout() {
 
 login() {
   const url = `${BASE_URL}/api/user_token`;
-  const body = {"auth": {"email": this.state.email, "password": this.state.password}}
-  const init = {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-    mode: 'cors',
-    body: JSON.stringify(body),
-  }
+  const body = {"auth": {"email": this.state.email, "password": this.state.password} }
+  const init = { method: 'POST',
+                 headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+                 mode: 'cors',
+                 body:JSON.stringify(body),
+                }
   fetch(url, init)
-    .then(res => res.json())
-    .then(res => localStorage.setItem("jwt", res.jwt))
-    .then(() => this.setState({
-      currentUser: true,
-    }))
-    .then(() => this.getPosts())
-    .catch(err => console.log(err))
-    }
+  .then(res => res.json())
+  .then(res => localStorage.setItem("jwt", res.jwt))
+  .then(() => this.setState({
+     currentUser: true,
+       }))
+  .then(() => this.getPosts())
+  .catch(err => console.log(err))
+  }
 
     componentDidMount() {
       this.currentUser();
@@ -175,7 +174,8 @@ login() {
   //go to path based on action
   render() {
     console.log(this.state.posts, "the posts");
-    const display = this.state.posts && this.state.currentUser ? this.state.posts.map (post => {
+    // const display = this.state.posts && this.state.currentUser ? this.state.posts.map
+    const display = this.state.currentUser ? this.state.posts.map(post => {
       return <p key={post.id}> Name:{post.name}, Content:{post.content} </p>
     }) : "UNAUTHORIZED";
     return(
@@ -188,13 +188,13 @@ login() {
           </nav>
           <h1>Post It Your Life</h1>
         <form>
-          <label htmlFor="username">username: </label>
+          <label htmlFor="email">Email: </label>
           <br />
           <input
-            name="username"
+            name="email"
             onChange={this.handleChange}
-            value={this.state.username}
-            type="username"
+            value={this.state.email}
+            type="email"
           />
           <br /><br />
           <label htmlFor="password">Password:</label>
