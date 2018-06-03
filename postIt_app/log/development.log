@@ -16173,3 +16173,571 @@ Processing by UserTokenController#create as JSON
 Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6636096748049230770)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6636096748049230770)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:34:07 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:35:42 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 7ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:36:19 -0400
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-06-03 15:36:30 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user"=>{}}
+Completed 404 Not Found in 3ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:36:30 -0400
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:36:56 -0400
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:40:16 -0400
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:40:26 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 25ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:41:26 -0400
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:41:43 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6636096748049230770)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6636096748049230770)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:41:55 -0400
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:42:05 -0400
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:42:05 -0400
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:42:05 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 11ms (ActiveRecord: 4.7ms)
+
+
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 15ms (ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 23ms (ActiveRecord: 4.8ms)
+
+
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 24ms (ActiveRecord: 1.3ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:42:05 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 17ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:42:11 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6636096748049230770)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6636096748049230770)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:45:44 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:45:54 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 12ms (ActiveRecord: 6.2ms)
+
+
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:49:48 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"AdmonDigi", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"AdmonDigi", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "AdmonDigi"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:50:02 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"UserLove", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"UserLove", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "UserLove"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (7.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "lxz1098@yahoo.com"], ["password_digest", "$2a$10$OBqZrgs/5zy1Esf/v/na7.p1xGv0Wo5W0m8U9yYps398qRjeJhXmC"], ["created_at", "2018-06-03 19:52:40.613359"], ["updated_at", "2018-06-03 19:52:40.613359"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (28.1ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A new cake recipe"], ["content", "Made of chocolate"], ["created_at", "2018-06-03 19:52:40.640968"], ["updated_at", "2018-06-03 19:52:40.640968"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.4ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A twitter client idea"], ["content", "Only for replying to mentions and DMs"], ["created_at", "2018-06-03 19:52:40.677210"], ["updated_at", "2018-06-03 19:52:40.677210"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A novel set in Italy"], ["content", "A mafia crime drama starring Berlusconi"], ["created_at", "2018-06-03 19:52:40.679508"], ["updated_at", "2018-06-03 19:52:40.679508"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.4ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Card game design"], ["content", "Like Uno but involves drinking"], ["created_at", "2018-06-03 19:52:40.681547"], ["updated_at", "2018-06-03 19:52:40.681547"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "lxz1098@yahoo.com"], ["password_digest", "$2a$10$5ayDctasma7chl462gyhQu7jSZd2KG1pXSwHtdAdNkr9yExyri53a"], ["created_at", "2018-06-03 19:52:54.642742"], ["updated_at", "2018-06-03 19:52:54.642742"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (1.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A new cake recipe"], ["content", "Made of chocolate"], ["created_at", "2018-06-03 19:52:54.655174"], ["updated_at", "2018-06-03 19:52:54.655174"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.4ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A twitter client idea"], ["content", "Only for replying to mentions and DMs"], ["created_at", "2018-06-03 19:52:54.665681"], ["updated_at", "2018-06-03 19:52:54.665681"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.4ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A novel set in Italy"], ["content", "A mafia crime drama starring Berlusconi"], ["created_at", "2018-06-03 19:52:54.672901"], ["updated_at", "2018-06-03 19:52:54.672901"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Card game design"], ["content", "Like Uno but involves drinking"], ["created_at", "2018-06-03 19:52:54.676073"], ["updated_at", "2018-06-03 19:52:54.676073"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:53:54 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 15:54:04 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 105ms (Views: 0.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:54:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 40ms (Views: 19.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 15:57:56 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (19.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (2.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 121ms (Views: 75.4ms | ActiveRecord: 22.1ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "lxz1098@yahoo.com"], ["password_digest", "$2a$10$o26IZzWrkJZ4lHXox5tdaOMPsb.BuZiwN/1VVS6OsipoBXM6S7cxG"], ["created_at", "2018-06-03 19:59:44.814379"], ["updated_at", "2018-06-03 19:59:44.814379"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (12.2ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A new cake recipe"], ["content", "Made of chocolate"], ["created_at", "2018-06-03 19:59:44.827885"], ["updated_at", "2018-06-03 19:59:44.827885"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.6ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A twitter client idea"], ["content", "Only for replying to mentions and DMs"], ["created_at", "2018-06-03 19:59:44.847966"], ["updated_at", "2018-06-03 19:59:44.847966"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.9ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A novel set in Italy"], ["content", "A mafia crime drama starring Berlusconi"], ["created_at", "2018-06-03 19:59:44.851086"], ["updated_at", "2018-06-03 19:59:44.851086"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Card game design"], ["content", "Like Uno but involves drinking"], ["created_at", "2018-06-03 19:59:44.853999"], ["updated_at", "2018-06-03 19:59:44.853999"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:03:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (1.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 203ms (Views: 134.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:03:54 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (1.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 130ms (Views: 70.9ms | ActiveRecord: 48.2ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:04:16 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 48ms (Views: 12.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:06:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.9ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 20ms (Views: 12.8ms | ActiveRecord: 4.0ms)
+
+
+  [1m[35m (11.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6636096748049230770)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6636096748049230770)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "lxz1098@yahoo.com"], ["password_digest", "$2a$10$6LKL00zrPDZNQ8LK3VZak.TWEMA/dt/FsmEsdFw/7jRKiv7CrCXcG"], ["created_at", "2018-06-03 20:19:39.851677"], ["updated_at", "2018-06-03 20:19:39.851677"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (12.7ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A new cake recipe"], ["content", "Made of chocolate"], ["created_at", "2018-06-03 20:19:39.866707"], ["updated_at", "2018-06-03 20:19:39.866707"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A twitter client idea"], ["content", "Only for replying to mentions and DMs"], ["created_at", "2018-06-03 20:19:39.886630"], ["updated_at", "2018-06-03 20:19:39.886630"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A novel set in Italy"], ["content", "A mafia crime drama starring Berlusconi"], ["created_at", "2018-06-03 20:19:39.889348"], ["updated_at", "2018-06-03 20:19:39.889348"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPostIt Create (0.3ms)[0m  [1m[32mINSERT INTO "post_its" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Card game design"], ["content", "Like Uno but involves drinking"], ["created_at", "2018-06-03 20:19:39.891660"], ["updated_at", "2018-06-03 20:19:39.891660"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:07 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 55ms (Views: 14.1ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:31:24 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 70ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:31:37 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 68ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:37 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:31:37 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 65ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:37 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:31:40 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 77ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:40 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:31:41 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 64ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:41 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:31:45 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 64ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:45 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (21.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (34.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 78ms (Views: 20.6ms | ActiveRecord: 55.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:31:53 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:32:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.8ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-06-03 16:32:20 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 64ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-06-03 16:32:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+

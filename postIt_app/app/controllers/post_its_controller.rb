@@ -1,6 +1,6 @@
 class PostItsController < ApplicationController
   before_action :authenticate_user
-  before_action :set_post_its, only: [:show, :update, :destroy]
+  before_action :set_post_its, only: [:show, :create, :update, :destroy]
 
   # GET /post_its
   def index

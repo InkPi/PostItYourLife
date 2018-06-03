@@ -176,12 +176,15 @@ login() {
     console.log(this.state.posts, "the posts");
     // const display = this.state.posts && this.state.currentUser ? this.state.posts.map
     const display = this.state.currentUser ? this.state.posts.map(post => {
-      return <p key={post.id}> Name:{post.name}, Content:{post.content} </p>
+      return ShowAll
     }) : "UNAUTHORIZED";
     return(
       <Router>
+
         <div className="App">
+
           <div className="landing">
+
           <nav>
             <Link to ='/new'>Create</Link>
             {!!this.state.currentUser || <Login onSubmit={this.handleLogin} />}
@@ -220,13 +223,17 @@ login() {
           </button>
 
           <div> {display} </div>
-          </div>
-          <Switch>
-          <Route
-            render={()=> (<PostForm onSubmit={this.handleSubmit} />)}
-            path='/new'
-          />
 
+          </div>
+
+          <Switch>
+
+          <Route
+          path='/new'
+            render={()=> (
+            <PostForm onSubmit={this.handleSubmit}
+            />)}
+          />
           <Route
           exact path='/api/post_its'
           render={() => (
@@ -234,8 +241,7 @@ login() {
             posts={this.state.posts}
             onDelete={this.handleDelete}
             onEdit={this.handleEdit}
-            />
-          )}
+            />)}
           />
           <Route
             path="/api/post_its/:id/edit"
