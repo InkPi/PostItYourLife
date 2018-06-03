@@ -175,9 +175,9 @@ login() {
   render() {
     console.log(this.state.posts, "the posts");
     // const display = this.state.posts && this.state.currentUser ? this.state.posts.map
-    const display = this.state.currentUser ? this.state.posts.map(post => {
-      return ShowAll
-    }) : "UNAUTHORIZED";
+    const display = this.state.currentUser ? (<ShowAll posts={this.state.posts}
+                            />
+    ) : "UNAUTHORIZED";
     return(
       <Router>
 
