@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class PostItsControllerTest < ActionDispatch::IntegrationTest
-  skip_before_action :verify_authenticity_token
   setup do
     @post_it = post_its(:one)
   end

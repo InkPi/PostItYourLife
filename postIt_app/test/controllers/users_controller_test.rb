@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
-  skip_before_action :verify_authenticity_token
   setup do
     @user = users(:one)
   end
