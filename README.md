@@ -81,7 +81,9 @@ Edit
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Landing | H | 20hrs| 0hrs | hrs |
+| Landing/Register | H | 20hrs| 27hrs | hrs |
+| PostIts: ShowAll | H | 20hrs| 12hrs | hrs |
+| PostIt Form(create/edit)| H | 20hrs| 0hrs | hrs |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
