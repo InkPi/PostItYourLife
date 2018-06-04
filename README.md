@@ -102,10 +102,6 @@ Use this section to include a brief code snippet of functionality that you are p
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
- Auth wasn't able to access with premade email and password data:
-  Needed to use rails db:seed
- Rerouting issues from adding auth afterwards
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+ **Error**: Auth wasn't able to access with premade email and password data:
+ **RESOLUTION**: Needed to use rails db:seed
+ **ERROR**: Rerouting issues from adding auth afterwards
