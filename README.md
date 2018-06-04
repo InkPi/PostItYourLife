@@ -49,11 +49,11 @@ Include a link to your full the `Time\Priority` Matix.
 | New One Post-It | H | 20hrs| 0hrs | hrs | 
 | Edit One Post-It | H | 30hrs| 0hrs | hrs | 
 | Delete One Post-It | H | 1hrs| 0hrs | hrs |
-| Responsive Site | H | 5hrs| 0hrs | hrs |
-| Style Css | H | 3hrs| 0hrs | hrs |
-| Change Color of PostIt User Action | L | 20hrs| 0hrs | hrs |
-| Email Verification API | L | 15hrs| 0hrs | hrs | 
-| Emojis API | L | 30hrs| 0hrs | hrs | 
+| Responsive Site | H | 5hrs| 1hrs | hrs |
+| Style Css | H | 3hrs| 1hrs | hrs |
+| Change Color of PostIt User Action | L | 20hrs| 0hrs | 0hrs |
+| Email Verification API | L | 15hrs| 0hrs | 0hrs | 
+| Emojis API | L | 30hrs| 0hrs | 0hrs | 
 
 
 ## MVP 
@@ -79,7 +79,7 @@ Post function component
 Delete function component
 Edit
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Landing | H | 20hrs| 0hrs | hrs |
 
@@ -91,7 +91,7 @@ Helper functions should be generic enought that they can be reused in other appl
 | Capitalize | This will capitalize the first letter in a string | 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Use this section to list all supporting libraries and their role in the project. 
 
 ## Code Snippet
 
@@ -102,6 +102,9 @@ Use this section to include a brief code snippet of functionality that you are p
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
+ Auth wasn't able to access with premade email and password data:
+  Needed to use rails db:seed
+ Rerouting issues from adding auth afterwards
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
