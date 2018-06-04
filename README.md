@@ -94,6 +94,10 @@ Helper functions should be generic enought that they can be reused in other appl
 
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project. 
+ React (frontend)
+ Rails (backend)
+ Gem rack-cors (for cross-origin AJAX)
+ Gem Knock (for user authorization in Rails)
 
 ## Code Snippet
 
