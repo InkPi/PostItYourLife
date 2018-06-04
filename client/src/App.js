@@ -5,6 +5,7 @@ import './App.css';
 import ShowAll from './components/ShowAll';
 import PostForm from './components/PostForm';
 import Login from './components/Login';
+
 import {
   getPosts,
   createPost,
@@ -174,10 +175,16 @@ login() {
   //go to path based on action
   render() {
     console.log(this.state.posts, "the posts");
+    /* Had help with organizing and some routing problems partly due
+    to rerouting confusion from auth such as the commented area below
+    and along the way I learned some things (thank you Mimi) */
+
     // const display = this.state.posts && this.state.currentUser ? this.state.posts.map
-    const display = this.state.currentUser ? (<ShowAll posts={this.state.posts}
-                            />
-    ) : "UNAUTHORIZED";
+
+    // const display = this.state.currentUser ? (
+    //   <ShowAll posts={this.state.posts}
+    //                         />
+    // ) : "UNAUTHORIZED";
     return(
       <Router>
 
@@ -222,12 +229,11 @@ login() {
           Get Posts
           </button>
 
-          <div> {display} </div>
 
           </div>
 
+          <div className='response'>
           <Switch>
-
           <Route
           path='/new'
             render={()=> (
@@ -235,7 +241,7 @@ login() {
             />)}
           />
           <Route
-          exact path='/api/post_its'
+          exact path='/'
           render={() => (
             <ShowAll
             posts={this.state.posts}
@@ -244,7 +250,7 @@ login() {
             />)}
           />
           <Route
-            path="/api/post_its/:id/edit"
+            path="/post_its/:id/edit"
             label="edit"
             render={({ match }) => (
               <PostForm post={this.state.posts.filter(el => el.id === match.params.id)}
@@ -252,8 +258,9 @@ login() {
                         id={match.params.id}
               />)}
           />
-
            </Switch>
+           </div>
+
           </div>
         </Router>
     );

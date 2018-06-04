@@ -5,7 +5,7 @@ import './Post.css';
 //give each post action: delete and edit
 function Post({ post, onDelete, onEdit}) {
   return (
-    <div>
+    <div className='postDiv ui three column divided grid'>
     <form>
     <h1>{post.title}</h1>
       <p>{post.content}<button onClick={onDelete}>X</button></p>

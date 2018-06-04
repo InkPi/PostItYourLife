@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Switch, Route, Link } from 'react-router-dom';
+//import { BrowserRouter as Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import Post from './Post.jsx';
 import PostForm from './PostForm.jsx';
@@ -10,7 +11,7 @@ function ShowAll(props) {
       <div className='postDiv' key={i}>
       <Switch>
           <Route
-            exact path='/post_its'
+            exact path='/'
             render={() => (
               <Post
                 onDelete={()=> props.onDelete(post.id)}
@@ -19,7 +20,7 @@ function ShowAll(props) {
             )}
           />
           <Route
-            path={`/post_its/${post.id}/edit`}
+            path={'/'}
             render={() => (
               <li>
                 <PostForm
