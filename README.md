@@ -42,13 +42,13 @@ Include a link to your full the `Time\Priority` Matix.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Landing | H | 6hrs| 0hrs | hrs | 
-| Register Page | H | 20hrs| 0hrs | hrs | 
-| LogIn Page | H | 10hrs| 0hrs | hrs | 
-| Show All Post-Its Page | H | 8hrs| 0hrs | hrs | 
-| New One Post-It | H | 20hrs| 0hrs | hrs | 
-| Edit One Post-It | H | 30hrs| 0hrs | hrs | 
-| Delete One Post-It | H | 1hrs| 0hrs | hrs |
+| Landing | H | 6hrs| 3hrs | hrs | 
+| Register Page | H | 20hrs| 0hrs | 0hrs | 
+| LogIn Page | H | 10hrs| 20hrs | hrs | 
+| Show All Post-Its Page | H | 8hrs| 5hrs | hrs | 
+| New One Post-It | H | 20hrs| 10hrs | hrs | 
+| Edit One Post-It | H | 30hrs| 19hrs | hrs | 
+| Delete One Post-It | H | 1hrs| 10hrs | hrs |
 | Responsive Site | H | 5hrs| 1hrs | hrs |
 | Style Css | H | 3hrs| 1hrs | hrs |
 | Change Color of PostIt User Action | L | 20hrs| 0hrs | 0hrs |
