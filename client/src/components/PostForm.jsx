@@ -44,7 +44,7 @@ render() {
   const { title, content, id } = this.state.post
   return (
     <form onSubmit={this.handleSubmit} className={id? 'edit' : 'create'}>
-      {this.state.redirectHome && <Redirect to='/' />}
+      {this.state.redirectHome ? <Redirect to='/' />: "" }
       {!id && <h3>New Post</h3>}
       <label>
         <h4>Title</h4>
@@ -64,7 +64,8 @@ render() {
       />
       </label>
       <br />
-      <button type='submit'>{id? 'Edit' : 'Create'} Post</button>
+      {console.log('this is post id', this.props.id)}
+      <button type='submit'>{this.props.id ? 'Edit' : 'Create'} Post</button>
       <br />
       <Link to='/'>Cancel</Link>
     </form>

@@ -11,10 +11,12 @@ function ShowAll(props) {
       <div className='postDiv' key={i}>
       <Switch>
           <Route
-            exact path='/'
+            // exact path='/'
             render={() => (
               <Post
-                onDelete={()=> props.onDelete(post.id)}
+                onDelete={()=> {console.log(post.id);
+                  // props.onDelete(post.id, e)
+                }}
                 post={post}
               />
             )}
@@ -27,6 +29,7 @@ function ShowAll(props) {
                   //onSubmit={updatedPost => props.onEdit(updatedPost, updatedPost.id)}
                   onSubmit={props.onEdit}
                   initialValue={post}
+                  postId={post.id}
                 />
               </li>
             )}

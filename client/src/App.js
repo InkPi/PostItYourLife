@@ -132,7 +132,8 @@ login() {
   }
 
   //delete action
-  handleDelete(id) {
+  handleDelete(id, e) {
+    e.preventDefault();
     console.log('id', id);
     deletePost(id)
     .then(resBody=> {
