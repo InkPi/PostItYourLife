@@ -1,3 +1,8 @@
+.landing {
+  background-color: orange;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -25,4 +30,13 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/*https://internetingishard.com/html-and-css/flexbox/*/
+/*For this project, don't this exactly as it works without it
+but it does work for ex: padding:left will make the area go left */
+/*this is for show posts area*/
+.response {
+  display: flex;
+  justify-content: center;
 }

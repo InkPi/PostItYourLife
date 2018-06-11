@@ -49,7 +49,7 @@ function deletePost(id) {
 //update
 //turn json into string
 function updatePost(post, id) {
-  return fetch(`${BASE_URL}/post_its/${id}`, {
+  return fetch('/', {
     method: 'PUT',
     body: JSON.stringify(post),
     headers: {
