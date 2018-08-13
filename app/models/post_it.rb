@@ -1,0 +1,2 @@
+class PostIt < ApplicationRecord
+end
