@@ -1,0 +1,15 @@
+<!--
+  Helped refresh my memory:
+  https://mattboldt.com/react-rails-form-refactor/
+-->
+<%= form_with(model: post, local:true) do |p| %>
+  <%= p.label :title %>
+  <%= p.label :title %>
+
+  <%= p.label :content %>
+  <%= p.text_area :content %>
+
+<!-- https://stackoverflow.com/questions/23617393/
+how-to-add-a-class-to-a-erb-ruby-element-->
+  <%= f.submit, :class: 'p_button' %>
+<% end %>

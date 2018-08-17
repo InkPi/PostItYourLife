@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project Overview
 
 ## Project Schedule
@@ -111,3 +112,29 @@ Use this section to include a brief code snippet of functionality that you are p
  **Error**: Auth wasn't able to access with premade email and password data:
  **RESOLUTION**: Needed to use rails db:seed
  **ERROR**: Rerouting issues from adding auth afterwards
+=======
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+>>>>>>> 1e9244135dbf2b38d6477b7d4d8d6c099f252ec1
