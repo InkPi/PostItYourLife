@@ -26,9 +26,10 @@ function getPosts() {
 }
 
 //create
+//adding new headers is wrong
 function createPost(post) {
   return fetch(`${BASE_URL}/post_its`, {
-    method: 'Post',
+    method: 'POST',
     body: JSON.stringify(post),
     headers: {
       'content-type': 'application/json'

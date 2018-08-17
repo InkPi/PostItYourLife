@@ -7,6 +7,7 @@ import PostForm from './PostForm.jsx';
 
 function ShowAll(props) {
   //was taught how javascript syntax must be outside of html tags
+  console.log('props',props);
   const space = props.posts.map((post, i) => (
       <div className='postDiv' key={i}>
       <Switch>

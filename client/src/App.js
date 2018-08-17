@@ -25,6 +25,7 @@ class App extends Component {
       email: '',
       password: '',
       currentUser: null,
+      base:"http://localhost:3001"
     };
     this.getPosts = this.getPosts.bind(this);
     this.logout = this.logout.bind(this);
@@ -65,7 +66,7 @@ class App extends Component {
     const init = {
       headers: {"Authorization": `Bearer ${jwt}`}
     }
-    fetch(`${BASE_URL}/api/post_its`, init)
+    fetch(`${this.state.base}/api/post_its`, init)
     .then(res => res.json())
     .then(data => this.setState({
       posts: data,
@@ -88,7 +89,8 @@ logout() {
 }
 
 login() {
-  const url = `${BASE_URL}/api/user_token`;
+  const url = `${this.state.base}/api/user_token`;
+  // const url = `${BASE_URL}/api/user_token`;
   const body = {"auth": {"email": this.state.email, "password": this.state.password} }
   const init = { method: 'POST',
                  headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
@@ -102,7 +104,7 @@ login() {
      currentUser: true,
        }))
   .then(() => this.getPosts())
-  .catch(err => console.log(err))
+  .catch(err => console.log("FETCH ERROR",err))
   }
 
     componentDidMount() {
@@ -186,6 +188,9 @@ login() {
     //   <ShowAll posts={this.state.posts}
     //                         />
     // ) : "UNAUTHORIZED";
+    //Within Nav
+    // {!!this.state.currentUser || <Login onSubmit={this.handleLogin} />}
+
     return(
       <Router>
 
@@ -195,7 +200,6 @@ login() {
 
           <nav>
             <Link to ='/new'>Create</Link>
-            {!!this.state.currentUser || <Login onSubmit={this.handleLogin} />}
           </nav>
           <h1>Post It Your Life</h1>
         <form>
