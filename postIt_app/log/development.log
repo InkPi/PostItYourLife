@@ -23048,3 +23048,795 @@ Processing by PostItsController#index as */*
 Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-17 16:06:17 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-17 16:06:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-17 16:06:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-17 16:06:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-17 16:06:31 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-08-20 16:45:18 -0400
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 134ms (Views: 0.3ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:45:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (1.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 16ms (Views: 5.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:45:32 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:46:06 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:47:47 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:47:50 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:51:18 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:53:06 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:53:11 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:53:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 16:53:24 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:00:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:00:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:00:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:00:55 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:00:59 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:11 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:26 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:49 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:51 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:54 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:01:59 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:05 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:08 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.2ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:10 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:15 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:02:36 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:03:00 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:03:50 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/post_its/1" for 127.0.0.1 at 2018-08-20 17:03:53 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/post_its/1"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:04:06 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.7ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/post_its/1" for 127.0.0.1 at 2018-08-20 17:04:09 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/post_its/1"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:04:10 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/post_its/1" for 127.0.0.1 at 2018-08-20 17:04:15 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/post_its/1"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:06:30 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/api/post_its/1" for 127.0.0.1 at 2018-08-20 17:06:34 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:06:46 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/user_token" for 127.0.0.1 at 2018-08-20 17:07:00 -0400
+Processing by UserTokenController#create as JSON
+  Parameters: {"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lxz1098@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lxz1098@yahoo.com"], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 80ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:07:00 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/post_its/1" for 127.0.0.1 at 2018-08-20 17:07:02 -0400
+Processing by PostItsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:20:19 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:21:12 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:21:13 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:22:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:22:20 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:22:47 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:22:47 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:24:02 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:24:02 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (1.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:25:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:25:27 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:26:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:26:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:27:52 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:27:52 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:28:29 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:29:42 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (1.0ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:29:42 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:30:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:30:39 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:31:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:31:23 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:32:15 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:32:15 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:32:35 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:32:35 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:34:00 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:34:00 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:36:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.6ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:36:04 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:36:25 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.4ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:36:25 -0400
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.5ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/api/post_its/1" for 127.0.0.1 at 2018-08-20 17:36:31 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"s", "content"=>"s", "id"=>"1", "post_it"=>{"title"=>"s", "content"=>"s"}}
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/post_its" for 127.0.0.1 at 2018-08-20 17:38:07 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostItsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/lindazhou/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostIt Load (0.3ms)[0m  [1m[34mSELECT "post_its".* FROM "post_its"[0m
+  ↳ app/controllers/post_its_controller.rb:9
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/post_its/1" for 127.0.0.1 at 2018-08-20 17:38:13 -0400
+Processing by PostItsController#update as */*
+  Parameters: {"title"=>"z", "content"=>"z", "id"=>"1", "post_it"=>{"title"=>"z", "content"=>"z"}}
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+

@@ -135,6 +135,7 @@ login() {
 
   //delete action
   handleDelete(id, e) {
+    console.log("I AM DELETE")
     e.preventDefault();
     console.log('id', id);
     deletePost(id)
@@ -164,6 +165,7 @@ login() {
           ]
         } //not used to .slice and looked back on previous labs
       })
+      .catch(err=>console.log(err))
     });
   }
 
