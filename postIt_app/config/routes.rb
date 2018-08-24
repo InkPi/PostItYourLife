@@ -4,8 +4,7 @@ Rails.application.routes.draw do
     # post 'user_token' => 'user_token#create'
     post 'user_token' => 'user_token#create'
     resources :post_its
-    resources :users
-
+    #deleted resources user to not expose route
   end
 
 end

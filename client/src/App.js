@@ -90,6 +90,7 @@ logout() {
 
 login() {
   const url = `${this.state.base}/api/user_token`;
+
   // const url = `${BASE_URL}/api/user_token`;
   const body = {"auth": {"email": this.state.email, "password": this.state.password} }
   const init = { method: 'POST',
@@ -113,13 +114,13 @@ login() {
     }
 
   //set data of arrays onto screen
-  // componentDidMount() {
-  //   getPosts() //coming out
-  //     .then(data => {console.log('data',data);
-  //       this.setState({
-  //       posts: data //already out in array
-  //     })}).catch((err)=> err.message);
-  // }
+  componentDidMount() {
+    getPosts() //coming out
+      .then(data => {console.log('data',data);
+        this.setState({
+        posts: data //already out in array
+      })}).catch((err)=> err.message);
+  }
 
   //delete action
   handleSubmit(post) {
@@ -208,7 +209,8 @@ login() {
           <label htmlFor="email">Email: </label>
           <br />
           <input
-            name="email"
+            name="email" //should add id?
+            id="email" //just added
             onChange={this.handleChange}
             value={this.state.email}
             type="email"
@@ -218,6 +220,7 @@ login() {
           <br />
           <input
             name="password"
+            id="password" //just added
             onChange={this.handleChange}
             value={this.state.value}
             type="password"
@@ -235,6 +238,7 @@ login() {
           <button onClick={this.getPosts}>
           Get Posts
           </button>
+          <p>{this.state.postItsReceived}</p>
 
 
           </div>

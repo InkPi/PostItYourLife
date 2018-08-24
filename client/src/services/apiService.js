@@ -4,9 +4,9 @@ const BASE_URL= process.env.REACT_APP_BASE_URL;
 //Realized I put starting url /, after 3000, different for posts compared to other files
 //check for errors
 function checkStatus(resp) {
-  // if (!resp.ok) {throw new Error(resp.statusText)};
+  if (!resp.ok) {throw new Error(resp.statusText)};
   console.log('errors', resp);
-  return JSON.parse(resp);
+  return resp.json();
 }
 
 //save user during login

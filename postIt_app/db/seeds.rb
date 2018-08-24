@@ -14,13 +14,13 @@
 # admin.admin = true
 # admin.save
 
-# user = User.new
-# user.email = 'lxz1098@yahoo.com'
-# user.password = '12345'
-# user.password_confirmation = '12345'
-# user.save
+user = User.new
+user.email = 'lxz1098@yahoo.com'
+user.password = '12345'
+user.password_confirmation = '12345'
+user.save
 
-users = User.create({ email:'lxz1098@yahoo.com', password: '12345', password_confirmation: '12345'})
+#users = User.create({ email:'lxz1098@yahoo.com', password: '12345', password_confirmation: '12345'})
 
 post = PostIt.create(
   [
