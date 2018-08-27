@@ -4,8 +4,9 @@ const BASE_URL= process.env.REACT_APP_BASE_URL;
 //Realized I put starting url /, after 3000, different for posts compared to other files
 //check for errors
 function checkStatus(resp) {
-  if (!resp.ok) {throw new Error(resp.statusText)};
+  //if (!resp.ok) {throw new Error(resp.statusText)};
   console.log('errors', resp);
+  console.log(localStorage);
   return resp.json();
 }
 
@@ -15,6 +16,10 @@ function saveToken(respBody) {
   const user = jwtDecode(respBody.token);
   return user;
 }
+
+function getToken(){
+
+  const token = localStorage.getItem('jwt'); console.log(token); console.log(localStorage); return token;}
 
 /*Posts*/
 
@@ -32,7 +37,8 @@ function createPost(post) {
     method: 'POST',
     body: JSON.stringify(post),
     headers: {
-      'content-type': 'application/json'
+      'Content-Type': 'application/json', 'Accept':'application/json',
+      'Authorization': getToken()
     }
   }).then(checkStatus);
 }
@@ -45,6 +51,10 @@ function deletePost(id) {
   }
   return fetch(`${BASE_URL}/api/post_its/${id}`, {
     method: 'DELETE',
+    headers: {
+      'content-type': 'application/json',
+      'token': getToken()
+    }
   }).then(wantchocolate => foo())
 }
 

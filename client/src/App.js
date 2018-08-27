@@ -114,15 +114,15 @@ login() {
     }
 
   //set data of arrays onto screen
-  componentDidMount() {
-    getPosts() //coming out
-      .then(data => {console.log('data',data);
-        this.setState({
-        posts: data //already out in array
-      })}).catch((err)=> err.message);
-  }
+  // componentDidMount() {
+  //   getPosts() //coming out
+  //     .then(data => {console.log('data',data);
+  //       this.setState({
+  //       posts: data //already out in array
+  //     })}).catch((err)=> err.message);
+  // }
 
-  //delete action
+  //create action
   handleSubmit(post) {
     createPost(post)
     .then(resBody => {
@@ -134,20 +134,39 @@ login() {
     });
   }
 
+
+
+
   //delete action
   handleDelete(id, e) {
-    console.log("I AM DELETE")
+    const jwt = localStorage.getItem("jwt")
+    const init = {
+      headers: {"Authorization": `Bearer ${jwt}`}
+    }
     e.preventDefault();
-    console.log('id', id);
-    deletePost(id)
-    .then(resBody=> {
+    fetch(`${this.state.base}/api/post_its/${id}`, init)
+      .then(resBody=> {
       this.setState((prevState, props) => {
         return {
           posts: prevState.posts.filter(post=> post.id !== id)
         }
       })
-    });
+    })
+    .catch(err => err)
   }
+  // handleDelete(id, e) {
+  //   console.log("I AM DELETE")
+  //   e.preventDefault();
+  //   console.log('id', id);
+  //   deletePost(id)
+  //   .then(resBody=> {
+  //     this.setState((prevState, props) => {
+  //       return {
+  //         posts: prevState.posts.filter(post=> post.id !== id)
+  //       }
+  //     })
+  //   });
+  // }
 
   //edit action
   handleEdit(post, id) {
@@ -169,6 +188,25 @@ login() {
       .catch(err=>console.log(err))
     });
   }
+  // handleEdit(post, id) {
+  //   console.log("this is id:", id);
+  //   updatePost(post, id) //got help: did not realize this had to be exact params in another file
+  //   .then(resBody => {
+  //     this.setState((prevState, props) => {
+  //       const { posts } = prevState; //destructoring method (got help, didn't know why I thought it was a param)
+  //       console.log('this is prevState:', prevState);
+  //       const indx = posts.findIndex(q => q.id === id);
+  //       return {
+  //         posts: [
+  //           ...posts.slice(0, indx),
+  //           resBody.data,
+  //           ...posts.slice(indx+1)
+  //         ]
+  //       } //not used to .slice and looked back on previous labs
+  //     })
+  //     .catch(err=>console.log(err))
+  //   });
+  // }
 
 
 
