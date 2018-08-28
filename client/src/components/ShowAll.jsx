@@ -67,33 +67,6 @@ function ShowAll(props) {
       </div>
     )
   }
-  // return (
-  //   <ul>
-  //     {props.posts.map(post => (
-  //       <Switch key={post.id}>
-  //         <Route
-  //           path={'/post_its/${post.id}/edit'}
-  //           render={()=> (
-  //             <li>
-  //               <PostForm
-  //                 onSubmit={updatedPost => props.onEdit(updatedPost, updatedPost.id)}
-  //                 initialValue={post}
-  //               />
-  //             </li>
-  //           )}
-  //         />
-  //         <Route
-  //           render={() => (
-  //             <Post
-  //               onDelete={()=> props.onDelete(post.id)}
-  //               post={post}
-  //             />
-  //           )}
-  //         />
-  //         </Switch>
-  //       ))}
-  //   </ul>
-  // )
-//}
+
 
 export default ShowAll;
